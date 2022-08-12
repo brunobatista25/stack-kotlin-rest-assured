@@ -7,3 +7,15 @@ inputs:
     type: text
     name: project_name
     default: project-name
+  - label: "Digite o pacote: "
+    type: text
+    name: group_id
+    default: br.com.servrest
+computedInputs:
+  folder: "{{group_id}}"
+
+hooks:
+  - type: run
+    trigger: after-render
+    commands:
+      - mvn clean install -DskipTests=true

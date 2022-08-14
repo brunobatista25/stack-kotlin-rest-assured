@@ -1,9 +1,9 @@
 name: template-kotlin-rest-assured
-description: Describe your template explaining its purpose
+description: Template para gerar um projeto de testes automatizados em back-end usando kotlin e rest assured.
 types:
   - app-template
 inputs:
-  - label: Project name
+  - label: Nome do projeto
     type: text
     name: project_name
     default: project-name

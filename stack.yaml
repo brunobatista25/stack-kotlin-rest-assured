@@ -1,13 +1,17 @@
-description: Descricao
+description: Projeto destinado para fazer automações de projetos back-end usando kotlin
 name: stack-kotlin-rest-assured
 display-name: stack-kotlin-rest-assured
-picture: stack.png
-category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
-compatibility: # Put a list of technologies compatible with the stack
-  - java
-  - spring
-technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies 
-  - docker 
+picture: kotlin.jpg
+category: backend
+compatibility: 
+  - Kotlin
+technologies: 
+  - docker
+  - rest assured
+  - junit
+  - lombock
+  - hamcrest
+  - javafaker
 about: docs/about.md
 use-cases:
   - title: Use Case Title

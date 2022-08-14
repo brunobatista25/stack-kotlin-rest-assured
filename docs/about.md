@@ -31,9 +31,9 @@ Projeto destinado para fazer testes automatizados de Api, feita inicialmente com
 
 ### Rodar apontando para o ambiente de produção
 
-´´´shell
+```shell
 mvn clean test -Denvironments=prod
-´´´ 
+``` 
 
 ### Rodar apontando para o local
 

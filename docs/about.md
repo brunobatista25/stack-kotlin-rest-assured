@@ -37,20 +37,20 @@ mvn clean test -Denvironments=prod
 
 ### Rodar apontando para o local
 
-´´´shell
+```shell
 mvn clean test -Denvironments=local
-´´´ 
+``` 
 
 ### Rodar usando dockerfile
 
 - Primeiro precisamos criar a imagem
 
-´´´shell
+```shell
 docker build -t nome_da_imagem .
-´´´
+```
 
 - Depois da imagem criada pode executar o comando abaixo:
 
-´´´shell
+```shell
 docker run --rm  nome_da_imagem mvn clean test -Denvironments=prod
-´´´
+```

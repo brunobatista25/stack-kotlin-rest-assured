@@ -8,8 +8,8 @@ inputs:
     name: project_name
     default: project-name
 
-#hooks:
-#  - type: run
-#    trigger: after-render
-#    commands:
-#      - mvn clean install -DskipTests=true
+hooks:
+  - type: run
+    trigger: after-render
+    commands:
+      - mvn clean install -DskipTests=true

@@ -12,4 +12,4 @@ hooks:
   - type: run
     trigger: after-render
     commands:
-      - mvn clean install -DskipTests=true
+      - mvn clean install

@@ -11,6 +11,9 @@ inputs:
 hooks:
   - type: run
     trigger: after-render
-    working-dir: "{{project_name}}"
-    commands:
+    mac:
+      - mvn clean install -DskipTests=true
+    windows:
+      - cmd /c mvn clean install -DskipTests=true
+    linux:
       - mvn clean install -DskipTests=true

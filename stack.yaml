@@ -1,4 +1,4 @@
-description: Projeto destinado para fazer automações de projetos back-end usando kotlin
+description: Projeto destinado para fazer automações de projetos back-end usando kotlin e rest assured.
 name: stack-kotlin-rest-assured
 display-name: stack-kotlin-rest-assured
 picture: kotlin.jpg

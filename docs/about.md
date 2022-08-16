@@ -31,13 +31,13 @@ Projeto destinado para fazer testes automatizados de Api, feita inicialmente com
 ### Rodar apontando para o ambiente de produção
 
 ```shell
-mvn clean test -Denvironments=prod
+mvn clean test -Denvironment=prod
 ```
 
 ### Rodar apontando para o local
 
 ```shell
-mvn clean test -Denvironments=local
+mvn clean test -Denvironment=local
 ```
 
 ### Rodar usando dockerfile
@@ -51,5 +51,5 @@ docker build -t nome_da_imagem .
 - Depois da imagem criada pode executar o comando abaixo:
 
 ```shell
-docker run --rm  nome_da_imagem mvn clean test -Denvironments=prod
+docker run --rm  nome_da_imagem mvn clean test -Denvironment=prod
 ```

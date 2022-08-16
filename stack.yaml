@@ -9,8 +9,6 @@ technologies:
   - docker
   - rest assured
   - junit
-  - lombock
-  - hamcrest
   - javafaker
 about: docs/about.md
 use-cases:

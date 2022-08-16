@@ -1,10 +1,9 @@
 package support.utils
 
 object Environments {
-    @JvmStatic
-    val environments: String
-        get() {
-            var environments = System.getProperty("environments")
+
+    fun getEnvironment(): String? {
+            var environments = System.getProperty("environment")
             if (environments == null) {
                 environments = "local"
             }

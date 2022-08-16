@@ -6,7 +6,7 @@ import io.restassured.response.Response
 
 object RestContext {
     private var request: RequestSpecification? = null
-    @JvmStatic
+
     var response: Response? = null
         private set
 

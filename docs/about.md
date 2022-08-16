@@ -14,7 +14,7 @@ Projeto destinado para fazer testes automatizados de Api, feita inicialmente com
 
 ## Services
 
-- Esta pasta contém classes que irão reunir todos os metodos de ações que serão usadas nos testes
+- Esta pasta contém classes que irão reunir todos os metodos de ações que serão usadas nos testes.
 
 ## Support
 
@@ -22,8 +22,7 @@ Projeto destinado para fazer testes automatizados de Api, feita inicialmente com
 
 ## Resources
 
-- Essa pasta contém todos os arquivos onde especificamos os valores das variáveis globais do projeto
-
+- Essa pasta contém todos os arquivos onde especificamos os valores das variáveis globais do projeto.
 
 ## Como executar o projeto
 
@@ -33,13 +32,13 @@ Projeto destinado para fazer testes automatizados de Api, feita inicialmente com
 
 ```shell
 mvn clean test -Denvironments=prod
-``` 
+```
 
 ### Rodar apontando para o local
 
 ```shell
 mvn clean test -Denvironments=local
-``` 
+```
 
 ### Rodar usando dockerfile
 

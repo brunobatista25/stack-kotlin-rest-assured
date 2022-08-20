@@ -8,7 +8,6 @@ object RestContext {
     private var request: RequestSpecification? = null
 
     var response: Response? = null
-        private set
 
     fun initRequest() {
         RestAssured.useRelaxedHTTPSValidation()
@@ -45,12 +44,16 @@ object RestContext {
         response = request!!.post()
     }
 
-    fun setPathParams(params: Map<String?, String?>?) {
+    fun setPathParams(params: MutableMap<String, String>) {
         request!!.pathParams(params)
     }
 
-    fun setParams(params: Map<String?, *>?) {
+    fun setParams(params: MutableMap<String, String>) {
         request!!.params(params)
+    }
+
+    fun setQueryParams(queryParams: MutableMap<String, String>) {
+        request!!.queryParams(queryParams)
     }
 
     fun putRequest() {
@@ -59,5 +62,9 @@ object RestContext {
 
     fun patchRequest() {
         response = request!!.patch()
+    }
+
+    fun deleteRequest() {
+        response = request!!.delete()
     }
 }

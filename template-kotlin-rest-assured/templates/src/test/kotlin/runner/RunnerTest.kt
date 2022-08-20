@@ -3,8 +3,8 @@ package runner
 import org.junit.runner.RunWith
 import org.junit.runners.Suite
 import org.junit.runners.Suite.SuiteClasses
-import tests.RegisterContactTest
+import tests.UsersTest
 
 @RunWith(Suite::class)
-@SuiteClasses(RegisterContactTest::class)
+@SuiteClasses(UsersTest::class)
 class RunnerTest 

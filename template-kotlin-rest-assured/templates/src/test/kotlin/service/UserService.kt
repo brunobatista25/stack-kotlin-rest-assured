@@ -1,23 +1,26 @@
 package service
 
-import model.Contact
+import model.Users
 import support.utils.RestContext
 import support.enums.BaseUri
 import support.enums.ApiPath
 import java.util.HashMap
 
-object CreateContactService {
+object UserService {
 
-    fun createContact(name: String?, last_name: String?, email: String?, age: Int?,
-                      phone: String, address: String?, state: String?, city: String?) {
+    fun createUser(nome: String?, email: String?, password: String?, administrador: String?) {
         RestContext.initRequest()
         RestContext.setPath(BaseUri.URLBASE.path, ApiPath.USER.path)
+
         val header: MutableMap<String, String> = HashMap()
-        header["Content-type"] = "application/json"
-        header["Accept"] = "application/vnd.tasksmanager.v2"
+        header["accept"] = "application/json"
+        header["Content-Type"] = "application/json"
         RestContext.setHeader(header)
-        val user = Contact(name, last_name, email, age, phone, address, state, city)
+
+        val user = Users(nome, email, password, administrador)
         RestContext.setBody(user.toString())
+
         RestContext.postRequest()
     }
+
 }
